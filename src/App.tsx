@@ -1,5 +1,12 @@
+import { Login } from "./components/Login";
+import "./styles/global.scss";
+
 function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <div className="wrapper">
+      <Login />
+    </div>
+  );
 }
 
 export default App;
