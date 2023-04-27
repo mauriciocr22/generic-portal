@@ -1,0 +1,27 @@
+.inputContainer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.25em;
+
+  > i,
+  svg {
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    color: #aaa;
+  }
+
+  input {
+    border: 0;
+    border-bottom: 2px solid #dfdfdf;
+    padding: 8px;
+    padding-left: 30px;
+    outline: none;
+  }
+
+  input,
+  label {
+    font-size: 1em;
+    width: 100%;
+  }
+}

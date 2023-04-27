@@ -1,3 +1,6 @@
+import { Lock, Envelope } from "@phosphor-icons/react";
+
+import { Input } from "../Input";
 import "./styles.scss";
 
 export function Login() {
@@ -5,12 +8,8 @@ export function Login() {
     <div className="formWrapper">
       <form className="loginForm">
         <span className="loginTitle">Login</span>
-        <div className="inputContainer">
-          <label htmlFor="femail">Email</label>
-          <input type="text" name="femail" id="femail" />
-          <label htmlFor="fpassword">Password </label>
-          <input type="text" name="fpassword" id="fpassword" />
-        </div>
+        <Input type="email" label="Email" icon={<Envelope size={20} />} required />
+        <Input type="password" label="Password" icon={<Lock size={20} />} required />
         <div className="rememberContainer">
           <div>
             <input type="checkbox" name="fremember" id="fremember" />
