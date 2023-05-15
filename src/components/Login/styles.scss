@@ -1,8 +1,8 @@
 .formWrapper {
   display: flex;
-  border: 1px solid black;
-  width: 20%;
+  min-width: 400px;
   padding: 2rem;
+  background-color: #ffffff;
 
   .loginForm {
     display: flex;
@@ -10,10 +10,29 @@
     align-items: center;
     width: 100%;
 
+    a {
+      text-decoration: none;
+      color: rgb(78, 78, 78);
+    }
+
+    a:hover {
+      color: black;
+    }
+
+    span {
+      color: #6b6b6b;
+    }
+
     .loginTitle {
       font-size: 48px;
       width: 100%;
       text-align: center;
+      margin-bottom: 2rem;
+      font-weight: normal;
+    }
+
+    input {
+      margin-bottom: 8px;
     }
 
     .rememberContainer {
@@ -21,10 +40,23 @@
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
+      margin: 30px 0 10px 0;
+
+      .rememberContainer,
+      input {
+        margin-right: 4px;
+      }
     }
 
     .submitButton {
       width: 100%;
+      font-size: 18px;
+      border-radius: 3px;
+      padding: 8px;
+      background-color: #4f67ff;
+      cursor: pointer;
+      color: white;
+      margin-bottom: 30px;
     }
   }
 }

@@ -17,6 +17,14 @@
     padding: 8px;
     padding-left: 30px;
     outline: none;
+
+  }
+  
+  .toggleButton {
+    position: absolute;
+    right: 28px;
+    top: 4px;
+    cursor: pointer;
   }
 
   input,

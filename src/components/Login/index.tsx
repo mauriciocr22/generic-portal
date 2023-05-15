@@ -7,7 +7,7 @@ export function Login() {
   return (
     <div className="formWrapper">
       <form className="loginForm">
-        <span className="loginTitle">Login</span>
+        <h1 className="loginTitle">Login</h1>
         <Input type="email" label="Email" icon={<Envelope size={20} />} required />
         <Input type="password" label="Password" icon={<Lock size={20} />} required />
         <div className="rememberContainer">
